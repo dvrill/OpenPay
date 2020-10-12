@@ -38,6 +38,7 @@ def aggiungi(username, password, soldi):
     else:
         return '{"stato" = "KO", "soldi" = "0"}'
 
+
 @app.route('/preleva/<username>/<password>/<soldi>')
 def togli(username, password, soldi):
     get_Pass()
